@@ -3,10 +3,10 @@ import {withStyles} from "@material-ui/core";
 import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 
-const uglyStyles = {
+const uglyStyles = theme => ({
     button: {
         backgroundColor: "blue",
-        margin: "30px",
+        margin: "50px",
         height: 48,
         padding: "0 30px",
         boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
@@ -20,9 +20,11 @@ const uglyStyles = {
     child: {
         backgroundColor: "rgba(139,0,0)",
     },
-};
+});
 
-const prettyStyles = {
+const rippleOpacityOnClick = 0.3;
+
+const prettyStyles = theme => ({
     button: {
         backgroundColor: "white",
         border: "1px solid #DADBDF",
@@ -42,7 +44,21 @@ const prettyStyles = {
     child: {
         backgroundColor: "#757575",
     },
-};
+    rippleVisible: {
+        opacity: rippleOpacityOnClick,
+        animation: `$enter 900ms ${theme.transitions.easing.easeInOut}`,
+    },
+    '@keyframes enter': {
+        '0%': {
+            transform: 'scale(0)',
+            opacity: 0.1,
+        },
+        '100%': {
+            transform: 'scale(4)',
+            opacity: rippleOpacityOnClick,
+        },
+    },
+});
 
 class MyButton extends Component {
     render() {
