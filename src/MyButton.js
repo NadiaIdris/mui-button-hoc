@@ -3,7 +3,7 @@ import {withStyles} from "@material-ui/core";
 import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 
-const uglyStyles = theme => ({
+const uglyStyles = {
     button: {
         backgroundColor: "blue",
         margin: "30px",
@@ -20,22 +20,9 @@ const uglyStyles = theme => ({
     child: {
         backgroundColor: "rgba(139,0,0)",
     },
-    rippleVisible: {
-        animation: `$enter 550ms ${theme.transitions.easing.easeInOut}`,
-    },
-    "@keyframes enter": {
-        "0%": {
-            transform: "scale(0)",
-            opacity: 0.0,
-        },
-        "100%": {
-            transform: "scale(1)",
-            opacity: 0.5,
-        }
-    }
-});
+};
 
-const prettyStyles = theme => ({
+const prettyStyles = {
     button: {
         backgroundColor: "white",
         border: "1px solid #DADBDF",
@@ -53,34 +40,21 @@ const prettyStyles = theme => ({
         },
     },
     child: {
-        backgroundColor: "#000000",
+        backgroundColor: "#757575",
     },
-    rippleVisible: {
-        animation: `$enter 550ms ${theme.transitions.easing.easeInOut}`,
-    },
-    "@keyframes enter": {
-        "0%": {
-            transform: "scale(0)",
-            opacity: 0.0,
-        },
-        "100%": {
-            transform: "scale(1)",
-            opacity: 0.15,
-        }
-    }
-});
+};
 
 class MyButton extends Component {
     render() {
-        const { button, ...rippleClasses } = this.props.classes;
-        const { text } = this.props;
+        const {button, ...rippleClasses} = this.props.classes;
+        const {text} = this.props;
 
         return (
-                <Button
-                    TouchRippleProps={{classes: rippleClasses}}
-                    className={button}>
-                    {text}
-                </Button>
+            <Button
+                TouchRippleProps={{classes: rippleClasses}}
+                className={button}>
+                {text}
+            </Button>
         );
     }
 }
