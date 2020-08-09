@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {UglyButton, PrettyButton} from "./MyButton";
+import UglyButton from "./UglyButton";
+import PrettyButton from "./PrettyButton";
 
 class App extends Component {
     render() {

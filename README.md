@@ -1,6 +1,7 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+
 - [Design](#design)
 - [Info](#info)
 - [Debug using WebStorm](#debug-using-webstorm)
@@ -9,7 +10,9 @@
 - [How to style button component](#how-to-style-button-component)
 - [How to configure Prettier](#how-to-configure-prettier)
 - [Git error - Fatal: remote origin already exists](#git-error---fatal-remote-origin-already-exists)
-- [Change master to main (2020-06-27)](#change-master-to-main-2020-06-27)
+- [Material design](#material-design)
+- [Make a button in vanilla JS,MUI, MDC and compare them](#make-a-button-in-vanilla-jsmui-mdc-and-compare-them)
+- [Change master to main](#change-master-to-main)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -116,6 +119,15 @@ source code for TouchRipple.js.
 # Git error - Fatal: remote origin already exists
 
 - [Article to fix the problem](https://www.datree.io/resources/git-error-fatal-remote-origin-already-exists)
+
+# Material design
+
+- [Demos by Google](https://material-components.github.io/material-components-web-catalog/#/)
+- [Material Design code lab by Google:](https://codelabs.developers.google.com/codelabs/mdc-101-web/#0)
+
+# Make a button in vanilla JS,MUI, MDC and compare them
+
+- Write an article about it.
 
 # Change master to main
 
